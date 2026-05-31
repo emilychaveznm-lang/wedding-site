@@ -7,7 +7,7 @@
     --silver: #C8D0DC;
     --blue-gray: #91ba8f;
     --gold: #C9A84C;
-    --shadow: 0 14px 32px rgba(13, 27, 53, 0.12);
+    --shadow: 0 14px 32px rgba(13, 53, 18, 0.12);
     --radius: 16px;
     --header-height: 72px;
 }
@@ -29,8 +29,8 @@ body {
     color: var(--navy);
     background:
         radial-gradient(circle at 10% 10%, rgba(201, 168, 76, 0.08), transparent 40%),
-        radial-gradient(circle at 90% 0%, rgba(74, 111, 165, 0.2), transparent 42%),
-        linear-gradient(180deg, #f7f9fc 0%, #edf1f8 100%);
+        radial-gradient(circle at 90% 0%, rgba(88, 165, 74, 0.2), transparent 42%),
+        linear-gradient(180deg, #f7fcfa 0%, #eef8ed 100%);
     line-height: 1.6;
     text-rendering: optimizeLegibility;
 }
@@ -125,8 +125,8 @@ h2 {
 }
 
 .site-header--scrolled {
-    background: #0F1520;
-    box-shadow: 0 10px 24px rgba(11, 21, 38, 0.2);
+    background: #0f200f;
+    box-shadow: 0 10px 24px rgba(13, 38, 11, 0.2);
     border-bottom-color: transparent;
 }
 
@@ -151,7 +151,7 @@ h2 {
     top: var(--header-height);
     left: 0;
     right: 0;
-    background: rgba(36, 59, 94, 0.98);
+    background: rgba(39, 94, 36, 0.98);
     padding: 1.2rem 1.6rem;
     display: grid;
     gap: 1rem;
@@ -211,8 +211,8 @@ h2 {
     padding: 0.8rem 1rem;
     border-radius: 999px;
     background: linear-gradient(135deg, #d4b15a 0%, #b8923c 100%);
-    color: #162238;
-    box-shadow: 0 10px 22px rgba(10, 18, 34, 0.16);
+    color: #163819;
+    box-shadow: 0 10px 22px rgba(12, 34, 10, 0.16);
 }
 
 .nav-links .nav-rsvp::after {
@@ -221,7 +221,7 @@ h2 {
 
 .nav-links .nav-rsvp:hover,
 .nav-links .nav-rsvp:focus-visible {
-    color: #162238;
+    color: #1a3816;
     transform: translateY(-1px);
 }
 
@@ -266,8 +266,8 @@ h2 {
     inset: 0;
     background:
         linear-gradient(to top,
-            rgba(10, 12, 16, 0.75) 0%,
-            rgba(10, 12, 16, 0.2) 50%,
+            rgba(10, 16, 11, 0.75) 0%,
+            rgba(11, 16, 10, 0.2) 50%,
             rgba(255, 200, 100, 0.08) 100%),
         url("../assets/images/noivos-se-olhando.webp");
     background-size: cover;
@@ -410,7 +410,7 @@ h2 {
 .hero-btn--primary:hover,
 .hero-btn--primary:focus-visible {
     transform: translateY(-3px);
-    box-shadow: 0 16px 32px rgba(8, 14, 24, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.28);
+    box-shadow: 0 16px 32px rgba(8, 24, 11, 0.26), inset 0 1px 0 rgba(255, 255, 255, 0.28);
 }
 
 .hero-btn--secondary {
@@ -481,13 +481,13 @@ h2 {
     background: var(--white);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
-    border: 1px solid rgba(200, 208, 220, 0.5);
+    border: 1px solid rgba(200, 220, 214, 0.5);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .info-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 24px 48px rgba(13, 27, 53, 0.16);
+    box-shadow: 0 24px 48px rgba(13, 53, 14, 0.16);
 }
 
 .info-card-image {
@@ -555,7 +555,7 @@ h2 {
 }
 
 .section-story {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(244, 247, 252, 0.95) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.95) 0%, rgba(244, 252, 249, 0.95) 100%);
 }
 
 .story-timeline {
@@ -573,7 +573,7 @@ h2 {
     top: 0.4rem;
     bottom: 0.4rem;
     width: 2px;
-    background: linear-gradient(180deg, rgba(201, 168, 76, 0.85), rgba(74, 111, 165, 0.3));
+    background: linear-gradient(180deg, rgba(201, 168, 76, 0.85), rgba(74, 165, 135, 0.3));
 }
 
 .story-card {
@@ -582,7 +582,7 @@ h2 {
     padding: 1.2rem 1.2rem 1.2rem 1.35rem;
     border-radius: var(--radius);
     background: rgba(255, 255, 255, 0.9);
-    border: 1px solid rgba(200, 208, 220, 0.7);
+    border: 1px solid rgba(200, 220, 213, 0.7);
     box-shadow: var(--shadow);
     transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -601,7 +601,7 @@ h2 {
 
 .story-card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 20px 42px rgba(13, 27, 53, 0.14);
+    box-shadow: 0 20px 42px rgba(13, 53, 34, 0.14);
 }
 
 .story-step {
@@ -634,7 +634,7 @@ h2 {
     margin-top: 1.5rem;
     padding: 1.3rem;
     border-radius: var(--radius);
-    background: linear-gradient(135deg, rgba(27, 42, 74, 0.95), rgba(36, 59, 94, 0.92));
+    background: linear-gradient(135deg, rgba(27, 74, 48, 0.95), rgba(36, 94, 56, 0.92));
     color: var(--white);
     text-align: center;
     display: grid;
@@ -681,7 +681,7 @@ h2 {
     height: 42px;
     border-radius: 999px;
     border: 1px solid rgba(201, 168, 76, 0.55);
-    background: rgba(27, 42, 74, 0.78);
+    background: rgba(27, 74, 46, 0.78);
     color: var(--mist);
     font-size: 1.55rem;
     line-height: 1;
@@ -694,7 +694,7 @@ h2 {
 
 .carousel-arrow:hover,
 .carousel-arrow:focus-visible {
-    background: rgba(36, 59, 94, 0.96);
+    background: rgba(36, 94, 67, 0.96);
     border-color: var(--gold);
 }
 
@@ -723,7 +723,7 @@ h2 {
     height: 8px;
     border-radius: 999px;
     border: 0;
-    background: rgba(74, 111, 165, 0.45);
+    background: rgba(74, 165, 107, 0.45);
     cursor: pointer;
     transition: transform 0.2s ease, background 0.2s ease;
 }
@@ -769,7 +769,7 @@ h2 {
 }
 
 .section-rsvp {
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.72) 0%, rgba(237, 241, 248, 0.92) 100%);
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.72) 0%, rgba(237, 248, 240, 0.92) 100%);
 }
 
 .rsvp-helper {
@@ -784,8 +784,8 @@ h2 {
 .rsvp-helper span {
     padding: 0.45rem 0.8rem;
     border-radius: 999px;
-    background: rgba(74, 111, 165, 0.08);
-    border: 1px solid rgba(74, 111, 165, 0.2);
+    background: rgba(74, 165, 121, 0.08);
+    border: 1px solid rgba(74, 165, 127, 0.2);
     color: var(--deep-blue);
     font-size: 0.85rem;
     font-weight: 700;
@@ -837,9 +837,9 @@ h2 {
 .rsvp-form select:focus,
 .rsvp-form textarea:focus {
     outline: none;
-    border-color: rgba(74, 111, 165, 0.7);
-    box-shadow: 0 0 0 4px rgba(74, 111, 165, 0.12);
-    background: #fbfdff;
+    border-color: rgba(74, 165, 113, 0.7);
+    box-shadow: 0 0 0 4px rgba(74, 165, 107, 0.12);
+    background: #fbfffc;
 }
 
 .rsvp-form button {
@@ -966,7 +966,7 @@ h2 {
 
 .gift-card {
     background: var(--white);
-    border: 1px solid rgba(200, 208, 220, 0.7);
+    border: 1px solid rgba(200, 220, 206, 0.7);
     border-radius: var(--radius);
     box-shadow: var(--shadow);
     padding: 1.4rem;
@@ -999,7 +999,7 @@ h2 {
 .pix-qr-wrap {
     border-radius: 14px;
     background: linear-gradient(160deg, #f7f9fc 0%, #edf1f8 100%);
-    border: 1px dashed rgba(74, 111, 165, 0.45);
+    border: 1px dashed rgba(74, 165, 110, 0.45);
     padding: 0.9rem;
     margin-bottom: 0.95rem;
 }
@@ -1025,7 +1025,7 @@ h2 {
 
 .pix-key-text {
     background: #f4f6fb;
-    border: 1px solid rgba(200, 208, 220, 0.8);
+    border: 1px solid rgba(200, 220, 209, 0.8);
     border-radius: 10px;
     padding: 0.6rem 0.75rem;
     font-size: 0.9rem;
@@ -1035,7 +1035,7 @@ h2 {
 
 .pix-copy-btn {
     background: linear-gradient(135deg, #d4b15a 0%, #b8923c 100%);
-    color: #162238;
+    color: #163824;
     border: 1px solid transparent;
     border-radius: 10px;
     min-height: 42px;
@@ -1047,7 +1047,7 @@ h2 {
 .pix-copy-btn:hover,
 .pix-copy-btn:focus-visible {
     background: linear-gradient(135deg, #dfc068 0%, #c49e45 100%);
-    color: #0e1a2b;
+    color: #0e2b12;
     border-color: transparent;
 }
 
@@ -1069,8 +1069,8 @@ h2 {
     margin-top: 0.35rem;
     font-size: 0.85rem;
     color: var(--deep-blue);
-    background: rgba(74, 111, 165, 0.12);
-    border: 1px solid rgba(74, 111, 165, 0.28);
+    background: rgba(74, 165, 116, 0.12);
+    border: 1px solid rgba(74, 165, 139, 0.28);
     border-radius: 10px;
     padding: 0.5rem 0.7rem;
 }
@@ -1083,7 +1083,7 @@ h2 {
     background: var(--white);
     border-left: 4px solid var(--gold);
     border-radius: 12px;
-    box-shadow: 0 8px 32px rgba(13, 27, 53, 0.2);
+    box-shadow: 0 8px 32px rgba(13, 53, 36, 0.2);
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -1182,7 +1182,7 @@ h2 {
     margin-top: 0.15rem;
     min-width: 210px;
     background: linear-gradient(135deg, #d4b15a 0%, #b8923c 100%);
-    color: #162238;
+    color: #163823;
     border-color: transparent;
     box-shadow: 0 8px 20px rgba(180, 130, 40, 0.25);
 }
@@ -1197,7 +1197,7 @@ h2 {
 .gifts-backdrop {
     position: fixed;
     inset: 0;
-    background: rgba(10, 15, 25, 0.58);
+    background: rgba(10, 25, 18, 0.58);
     backdrop-filter: blur(2px);
     opacity: 0;
     visibility: hidden;
@@ -1235,7 +1235,7 @@ h2 {
     overflow: auto;
     z-index: 1201;
     cursor: default;
-    box-shadow: 0 32px 64px rgba(13, 27, 53, 0.3);
+    box-shadow: 0 32px 64px rgba(13, 53, 28, 0.3);
 }
 
 .section-gifts.pix-open .gift-card--havan {
@@ -1567,7 +1567,7 @@ h2 {
 @media (min-width: 768px) {
     .carousel--gallery .carousel-viewport {
         height: 500px;
-        background-color: #F0F2F5;
+        background-color: #f0f5f3;
     }
 
     .carousel--gallery .carousel-track .gallery-item {
@@ -1575,14 +1575,14 @@ h2 {
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #F0F2F5;
+        background-color: #f0f5f2;
     }
 
     .carousel--gallery .carousel-track .gallery-item img {
         width: 100%;
         height: 100%;
         object-fit: contain;
-        background-color: #F0F2F5;
+        background-color: #f0f5f2;
     }
 }
 
@@ -1631,7 +1631,7 @@ h2 {
 
 /* ---- Nudge bar de presentes ---- */
 .gifts-nudge-bar {
-    background: linear-gradient(135deg, #1B2A4A 0%, #243B5E 100%);
+    background: linear-gradient(135deg, #1b4a36 0%, #245e45 100%);
     color: rgba(255, 255, 255, 0.88);
     text-align: center;
     padding: 0.9rem 1.25rem;
@@ -1692,8 +1692,8 @@ h2 {
 .gift-float-btn:hover,
 .gift-float-btn:focus-visible {
     transform: translateY(-3px);
-    box-shadow: 0 14px 36px rgba(13, 27, 53, 0.36);
-    color: #0e1a2b;
+    box-shadow: 0 14px 36px rgba(13, 53, 32, 0.36);
+    color: #0e2b1d;
 }
 
 .gift-float-btn--hidden {
