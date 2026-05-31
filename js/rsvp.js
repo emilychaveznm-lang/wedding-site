@@ -1,4 +1,4 @@
-const SUPABASE_URL = 'https://tummmtcgxaxhmdnclsxd.supabase.co';
+const SUPABASE_URL = 'https://tohnnlwklesuuwrczkft.supabase.co';
 const SUPABASE_KEY = 'sb_publishable_Hy43AwFo5rkRMwxABp8MQw_SBl9S2rr';
 const TABLE_NAME = 'confirmacoes';
 
