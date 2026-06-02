@@ -56,7 +56,7 @@
                 </p>
 
                 <div class="hero-actions" aria-label="Main invitation actions">
-                    <a class="hero-btn hero-btn--primary" href="#registry">View gift list</a>
+                    <a class="hero-btn hero-btn--primary" href="#registry">View registry</a>
                     <a class="hero-btn hero-btn--secondary"
                         href="https://www.google.com/maps/place/Truchas+Peaks+Place/@36.0470361,-105.8155414,17z/data=!3m1!4b1!4m6!3m5!1s0x87183ba2f554d74f:0xf8b813de81f15b3d!8m2!3d36.0470362!4d-105.8106705!16s%2Fg%2F1th82ddj?entry=ttu&g_ep=EgoyMDI2MDUyNy4wIKXMDSoASAFQAw%3D%3D" target="_blank"
                         rel="noopener noreferrer">Directions</a>
@@ -240,19 +240,26 @@
                 </div>
 
 
-                <form id="form-rsvp" class="rsvp-form" novalidate>
-                    <label for="nome">Full name</label>
-                    <input type="text" id="nome" name="nome" placeholder="Your first and last name" autocomplete="name"
+                <form 
+                id="form-rsvp" 
+                class="rsvp-form" 
+                action="https://formsubmit.co/emilychaveznm@gmail.com" 
+                method="POST">
+                    <input type="hidden" name="_subject" value="New RSVP submission!">
+                    <input type="hidden" name="captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <label for="name">Full name</label>
+                    <input type="text" id="name" name="name" placeholder="Your first and last name" autocomplete="name"
                         enterkeyhint="next" required>
 
                     <label>Number of plus ones <span class="field-hint">(Children are welcome!)</span></label>
 
-                    <input type="number" id="acompanhantes" name="acompanhantes" min="0" max="10" value="0"
+                    <input type="number" id="plus ones" name="plus ones" min="0" max="10" value="0"
                         inputmode="numeric" required>
 
-                    <label for="quantidade_criancas">Number of children from 0 to 8 years old (we will have something
+                    <label for="children">Number of children from 0 to 8 years old (we will have something
                         special for them)</label>
-                    <input type="number" id="quantidade_criancas" name="quantidade_criancas" min="0" max="10" value="0"
+                    <input type="number" id="children" name="children" min="0" max="10" value="0"
                         inputmode="numeric" required>
 
                     <label for="presenca">Will you attend?</label>
@@ -262,17 +269,17 @@
                         <option value="nao">No</option>
                     </select>
 
-                    <label for="mensagem">Food Allergies <span class="field-hint">(Please let us know if you have any food allergies!)</span></label>
-                    <textarea id="mensagem" name="mensagem" rows="2" enterkeyhint="send"
+                    <label for="food">Food Allergies <span class="field-hint">(Please let us know if you have any food allergies!)</span></label>
+                    <textarea id="food" name="food" rows="2" enterkeyhint="send"
                         placeholder=""></textarea>
 
-                    <label for="mensagem">Message for the couple <span class="field-hint">(if you are bringing guests,
+                    <label for="msg">Message for the couple <span class="field-hint">(if you are bringing guests,
                             include each full name to help with planning!)</span></label>
-                    <textarea id="mensagem" name="mensagem" rows="4" enterkeyhint="send"
+                    <textarea id="msg" name="msg" rows="4" enterkeyhint="send"
                         placeholder="Ex.: full names of guests and/or a loving note 💖"></textarea>
 
-                    <label for="mensagem">Song Recommendations <span class="field-hint">(recommend a song to be played on the big day!)</span></label>
-                    <textarea id="mensagem" name="mensagem" rows="4" enterkeyhint="send"
+                    <label for="song">Song Recommendations <span class="field-hint">(recommend a song to be played on the big day!)</span></label>
+                    <textarea id="song" name="song" rows="4" enterkeyhint="send"
                         placeholder="Ex.: a thousand years by Christina Perri"></textarea>
 
                     <button type="submit">RSVP</button>
@@ -326,7 +333,7 @@
     <script src="js/main.js" defer></script>
     <script src="js/countdown.js" defer></script>
     <script src="js/gallery.js" defer></script>
-    <script src="js/rsvp.js" defer></script>
+    <!-- <script src="js/rsvp.js" defer></script> -->
 
     <a href="#presentes" class="gift-float-btn gift-float-btn--hidden" id="gift-float-btn"
         aria-label="View the couple's gift list">
